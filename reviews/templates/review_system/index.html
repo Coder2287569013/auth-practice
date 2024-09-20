@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+</head>
+<body>
+    {% for review in reviews %}
+    <h1>{{ review.title }} by {{ review.author }}</h1>
+    <p>{{ review.content }}</p>
+    <p>{{ review.pub_date }}</p>
+    <hr>
+    {% endfor %}
+</body>
+</html>
